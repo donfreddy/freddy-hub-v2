@@ -1,0 +1,174 @@
+---
+title: Example
+description: Learn how to optimize your database queries for maximum performance and reduced response times.
+slug: example
+tags: ["database", "optimization", "indexing", "caching"]
+readingTime: 8
+published: true
+publishedAt: 2023/11/2
+updatedAt: 2023/11/2
+---
+
+# Develop
+
+We love your input! We want to make contributing to Hoppscotch as easy and transparent as possible, whether it's:
+
+::list{type="success"}
+
+- Reporting a bug
+- Discussing the current state of the code
+- Submitting a fix
+- Proposing new features
+
+::
+
+## We develop with GitHub
+
+We use GitHub to host code, track issues, and feature requests, as well as accept pull requests.
+
+**We use [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow), So all code changes happen through pull requests.**
+
+Pull requests are the best way to propose changes to the codebase (we use [GitHub Flow](https://guides.github.com/introduction/flow/index.html)). We actively welcome your pull requests.
+
+## **Developing**
+
+::alert{type="info"}
+::list{type="info"}
+
+- Section moved to [Self-Hosting](/documentation/self-host/getting-started).
+
+::
+::
+
+### Browser-based development environment
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/hoppscotch/hoppscotch)
+
+### Local development environment
+
+::alert{type="info"}
+::list{type="info"}
+
+- Section moved to [Self-Hosting](/documentation/self-host/getting-started).
+
+::
+::
+
+### Docker compose
+
+::alert{type="info"}
+::list{type="info"}
+
+- Section moved to [Self-Hosting](/documentation/self-host/getting-started).
+
+::
+::
+
+## **Docker**
+
+::alert{type="info"}
+::list{type="info"}
+
+- Section moved to [Self-Hosting](/documentation/self-host/getting-started).
+
+::
+::
+
+## **Releasing**
+
+::alert{type="info"}
+::list{type="info"}
+
+- Section moved to [Self-Hosting](/documentation/self-host/getting-started).
+
+::
+::
+
+### Any contributions you make will be under the MIT Software License
+
+In short, when you submit code changes, your submissions are understood to be under the same [MIT License](https://choosealicense.com/licenses/mit) that covers the project. Feel free to contact the maintainers if that's a concern.
+
+#### Report bugs using GitHub's Issues
+
+We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/hoppscotch/hoppscotch/issues); it's that easy!
+
+#### Write bug reports with detail, background, and sample code
+
+[This is an example](https://stackoverflow.com/q/12088905/180626) of a bug report I wrote, and I think it's not a bad model. Here's [another example](https://www.openradar.me/11905408).
+
+**Great Bug Reports** tend to have:
+
+- A quick summary and/or background
+- Steps to reproduce
+  - Be specific!
+  - Give a sample code if you can.
+- What you expected would happen
+- What happens
+- Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
+
+People love thorough bug reports. I'm not even kidding.
+
+#### Use a consistent coding style
+
+I'm again borrowing these from [Facebook's Guidelines](https://reactjs.org/docs/how-to-contribute.html)
+
+- 2 spaces for indentation rather than tabs
+- You can try using Eslint code extensions in vs code or something similar.
+
+## Recommended VS Code extensions
+
+::list{type="success"}
+
+- WindiCSS IntelliSense
+
+  [Install](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense) • [Repository](https://github.com/windicss/windicss-intellisense)
+
+- Vue Language Features (Volar)
+
+  [Install](https://marketplace.visualstudio.com/items?itemName=vue.volar) • [Repository](https://github.com/johnsoncodehk/volar)
+
+- Stylelint
+
+  [Install](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) • [Repository](https://github.com/stylelint/vscode-stylelint)
+
+- SCSS IntelliSense
+
+  [Install](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss) • [Repository](https://github.com/mrmlnc/vscode-scss)
+
+- SCSS Formatter
+
+  [Install](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter) • [Repository](https://github.com/sibiraj-s/vscode-scss-formatter)
+
+- PostCSS Language Support
+
+  [Install](https://marketplace.visualstudio.com/items?itemName=csstools.postcss) • [Repository](https://github.com/csstools/postcss-language)
+
+- npm Intellisense
+
+  [Install](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense) • [Repository](https://github.com/ChristianKohler/NpmIntellisense)
+
+- JavaScript and TypeScript Nightly
+
+  [Install](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next) • [Repository](https://github.com/microsoft/vscode-typescript-next)
+
+- GraphQL
+
+  [Install](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql) • [Repository](https://github.com/graphql/vscode-graphql)
+
+- ESLint
+
+  [Install](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) • [Repository](https://github.com/Microsoft/vscode-eslint)
+
+- EditorConfig for VS Code
+
+  [Install](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) • [Repository](https://github.com/editorconfig/editorconfig-vscode)
+
+- npm
+
+  [Install](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) • [Repository](https://github.com/Microsoft/vscode-npm-scripts)
+
+::
+
+## License
+
+By contributing, you agree that your contributions will be licensed under [MIT License](https://github.com/hoppscotch/hoppscotch/blob/main/LICENSE).

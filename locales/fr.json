@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "articles": "Articles",
+    "about": "À propos"
+  },
+  "pages": {
+    "title": {
+      "home": "{name}",
+      "blog": "Blog {separator} {name}",
+      "about": "À propos de moi {separator} {name}"
+    },
+    "home": {},
+    "projects": {
+      "title": "Projets",
+      "subtitle": "J'ai travaillé sur des tonnes de petits projets au fil des ans, mais ce sont ceux dont je suis le plus fier. Beaucoup d'entre eux sont open source, donc si vous voyez quelque chose qui pique votre intérêt, consultez le code et contribuez si vous avez des idées pour l'améliorer."
+    },
+    "articles": {
+      "title": "Articles",
+      "subtitle": "J'écris sur le développement d'applications, la technologie et mon parcours en tant que développeur. J'espère que vous trouverez quelque chose qui vous aide dans votre parcours en tant que développeur."
+    },
+    "blog_detail": {},
+    "about": {
+      "title": "À propos de moi",
+      "subtitle": "Je suis un développeur Web basé à Paris, en France. J'ai une passion pour la programmation et la technologie, et j'aime apprendre de nouvelles choses et partager mes connaissances avec les autres."
+    }
+  },
+  "components": {
+    "newsletter": {
+      "title": "Abonnez-vous à la newsletter",
+      "subtitle": "Recevez du courrier de ma part sur le développement Web, la technologie et l'accès anticipé aux nouveaux articles.",
+      "subscribe": "S'abonner"
+    },
+    "footer": "Tous droits réservés"
+  }
+}
