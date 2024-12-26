@@ -9,19 +9,13 @@
       format="pmg"
     />
     <h1 class="text-2xl font-bold tracking-tight text-gray-800 dark:text-gray-100">
-      Hi, I’m Don Freddy 👋🏽
+      {{ $t("pages.home.title") }}
     </h1>
     <p class="text-gray-900 dark:text-gray-400">
-      I work as a software, product engineer and designer from Bengaluru, India. I
-      specialize in building web applications and sites using Javascript, Vue &amp; Node.
-      I've procrastinated building this website for years but finally it's here, I've
-      carved out my own little nook on the internet to share my silly experiments, nifty
-      projects, and thoughts (mostly about tech and design).
+      {{ $t("pages.home.subtitle") }}
     </p>
     <p class="text-gray-900 dark:text-gray-400">
-      By day, I'm a Fullstack Developer at
-      <a href="" target="_blank" class="underline">Company</a>, and by night (and
-      weekends), I'm busy tinkering with some random tool or app that I am building.
+      {{ $t("pages.home.subtitle2") }}
     </p>
     <div class="flex gap-3">
       <UButton
@@ -30,7 +24,7 @@
         icon="solar:file-download-outline"
         variant="outline"
         size="sm"
-        >Download my resume</UButton
+        >{{ $t("pages.home.action_download") }}</UButton
       >
 
       <UButton
@@ -39,17 +33,18 @@
         icon="solar:letter-outline"
         variant="outline"
         size="sm"
-        >Get in touch</UButton
+        >{{ $t("pages.home.action_get_in_touch") }}</UButton
       >
     </div>
   </div>
 </template>
 
 <script setup>
+const { t } = useI18n();
+
 useSeoMeta({
-  title: "Don Freddy",
-  description:
-    "I'm Freddy, your friendly neighborhood software, product engineer and designer from Bengaluru, India. I specialize in building web applications and sites using Javascript, React, Vue & Node.",
+  title: t("pages.home.meta.title"),
+  description: t("pages.home.meta.description"),
 });
 
 const openMail = () => {

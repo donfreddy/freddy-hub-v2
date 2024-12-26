@@ -6,12 +6,21 @@
     "about": "À propos"
   },
   "pages": {
-    "title": {
-      "home": "{name}",
-      "blog": "Blog {separator} {name}",
-      "about": "À propos de moi {separator} {name}"
+    "home": {
+      "title": "Salut, je suis Don Freddy",
+      "subtitle": "Je travaille comme ingénieur logiciel à Douala, au Cameroun. Je me spécialise dans la création d'applications et de sites Web et mobiles utilisant Javascript, Vue et Node. J'ai tergiversé sur la création de ce site Web pendant des années, mais il est enfin là, j'ai créé mon propre petit coin sur Internet pour partager mes expériences idiotes, mes projets astucieux et mes réflexions (principalement sur la technologie).",
+      "subtitle2": "Le jour, je suis développeur Fullstack chez Company, et la nuit (et le week-end), je suis occupé à bricoler avec un outil ou une application aléatoire que je construis",
+      "action_download": "Télécharger mon CV",
+      "action_get_in_touch": "Entrer en contact",
+      "featured_projects": "Projets en vedette",
+      "recent_articles": "Articles récents",
+      "all_projects": "Tous les projets",
+      "all_articles": "Tous les articles",
+      "meta": {
+        "title": "Don Freddy | Ingénieur logiciel",
+        "description": "Je travaille comme ingénieur logiciel à Douala, au Cameroun. Je me spécialise dans la création d'applications et de sites Web et mobiles utilisant Javascript, Vue et Node."
+      }
     },
-    "home": {},
     "projects": {
       "title": "Projets",
       "subtitle": "J'ai travaillé sur des tonnes de petits projets au fil des ans, mais ce sont ceux dont je suis le plus fier. Beaucoup d'entre eux sont open source, donc si vous voyez quelque chose qui pique votre intérêt, consultez le code et contribuez si vous avez des idées pour l'améliorer."

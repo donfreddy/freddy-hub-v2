@@ -6,12 +6,21 @@
     "about": "About"
   },
   "pages": {
-    "title": {
-      "home": "{name}",
-      "blog": "Blog {separator} {name}",
-      "about": "About {separator} {name}"
+    "home": {
+      "title": "Hi, I’m Don Freddy",
+      "subtitle": "I work as a software engineer from Douala, Cameroon. I specialize in building web and mobile applications and sites using Javascript, Vue & Node. I've procrastinated building this website for years but finally it's here, I've carved out my own little nook on the internet to share my silly experiments, nifty projects, and thoughts (mostly about tech).",
+      "subtitle2": "By day, I'm a Fullstack Developer at Company, and by night (and weekends), I'm busy tinkering with some random tool or app that I am building",
+      "action_download": "Download my resume",
+      "action_get_in_touch": "Get in touch",
+      "featured_projects": "Featured Projects",
+      "recent_articles": "Recent Articles",
+      "all_projects": "All Projects",
+      "all_articles": "All Articles",
+      "meta": {
+        "title": "Don Freddy | Software Engineer",
+        "description": "I work as a software engineer from Douala, Cameroon. I specialize in building web and mobile applications and sites using Javascript, Vue & Node."
+      }
     },
-    "home": {},
     "projects": {
       "title": "Projets",
       "subtitle": "I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."

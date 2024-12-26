@@ -65,10 +65,5 @@ const items = [
     path: "/articles",
     icon: "solar:document-add-outline",
   },
-  {
-    name: t("nav.about"),
-    path: "/about",
-    icon: "solar:user-circle-outline",
-  },
 ];
 </script>

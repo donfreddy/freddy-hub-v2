@@ -4,14 +4,46 @@
 @source "../content";
 
 @theme {
-  --font-sans: "Public Sans", sans-serif;
+  --font-sans: "Inter", sans-serif;
 }
 
 :root {
-  --ui-primary: var(--ui-color-primary-700);
-  --ui-radius: var(--radius-sm);
+  /* --ui-primary: var(--color-primary); */
+  --ui-bg: var(--color-white);
 }
 
 .dark {
-  --ui-primary: var(--ui-color-primary-200);
+  --ui-bg: rgba(32, 33, 36, 1);
+}
+
+:root[data-accent="green"] {
+  --ui-primary: #4ade80;
+}
+
+:root[data-accent="teal"] {
+  --ui-primary: #2dd4bf;
+}
+
+:root[data-accent="indigo"] {
+  --ui-primary: #818cf8;
+}
+
+:root[data-accent="purple"] {
+  --ui-primary: #c084fc;
+}
+
+:root[data-accent="orange"] {
+  --ui-primary: #fb923c;
+}
+
+:root[data-accent="pink"] {
+  --ui-primary: #f472b6;
+}
+
+:root[data-accent="red"] {
+  --ui-primary: #f87171;
+}
+
+:root[data-accent="yellow"] {
+  --ui-primary: #facc15;
 }

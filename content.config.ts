@@ -25,20 +25,16 @@ export default defineContentConfig({
       [
         `projects_${locale}`,
         defineCollection({
-          source: `${locale}/projects/*.json`,
+          source: `${locale}/projects/**.json`,
           type: "data",
           schema: z.object({
             name: z.string(),
             description: z.string(),
             url: z.string().url(),
             thumbnail: z.string(),
-            stack: z.array(z.string()),
-            status: z.string(),
-            duration: z.string(), // in months
-            opensource: z.boolean(),
           }),
         }),
-      ],
+      ]
     ])
   ),
 });
