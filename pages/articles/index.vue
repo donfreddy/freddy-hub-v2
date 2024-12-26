@@ -14,7 +14,7 @@ const { t, locale } = useI18n();
 
 const description = t("pages.articles.subtitle");
 useSeoMeta({
-  title: `${t("nav.projects")} | Don Freddy`,
+  title: `${t("nav.articles")} | Don Freddy`,
   description,
 });
 
