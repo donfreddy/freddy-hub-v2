@@ -11,7 +11,7 @@
     <div class="flex items-center justify-center mt-6 text-sm">
       <UButton
         :label="$t('pages.home.all_articles') + ' &rarr;'"
-        :to="localePath('/articles')"
+        :to="$localePath('/articles')"
         variant="link"
         color="gray"
       />
@@ -21,9 +21,8 @@
 
 <script setup>
 const { locale } = useI18n();
-const localePath = useLocalePath();
 
-const { data: articles } = await useAsyncData(locale.value, () =>
+const { data: articles } = await useAsyncData("projects-home", () =>
   queryCollection(`articles_${locale.value}`)
     .order("publishedAt", "DESC")
     .select("title", "slug", "description", "tags", "publishedAt")

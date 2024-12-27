@@ -18,9 +18,9 @@ useSeoMeta({
   description,
 });
 
-const { data: articles } = await useAsyncData(locale.value, () =>
+const { data: articles } = await useAsyncData("all-articles", () =>
   queryCollection(`articles_${locale.value}`)
-    //.where("published", "==", true)
+    //.where("published", "=", true)
     .order("publishedAt", "DESC")
     .select("title", "slug", "description", "tags", "publishedAt")
     .all()

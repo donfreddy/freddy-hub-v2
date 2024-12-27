@@ -49,7 +49,7 @@
           <a
             href="https://www.instagram.com/dfreddy.dev"
             target="_blank"
-            class="flex items-center text-fgLightColor transition duration-500 ease-in-out hover:text-acColor"
+            class="social-icon"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -87,3 +87,16 @@
 <script setup lang="ts">
 const currentYear = new Date().getFullYear();
 </script>
+<style scoped>
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ui-text);
+  transition: color 0.3s;
+}
+.social-icon:hover {
+  color: var(--ui-primary);
+}
+</style>
+ 

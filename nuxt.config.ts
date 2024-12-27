@@ -24,6 +24,7 @@ export const options = {
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
+  typescript: { typeCheck: false }, // typeCheck: true
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {
@@ -58,8 +59,8 @@ export default defineNuxtConfig({
   ],
   content: {
     studio: {
-      enabled: true
-    }
+      enabled: true,
+    },
   },
   i18n: {
     locales: [
@@ -73,7 +74,11 @@ export default defineNuxtConfig({
       },
     ],
     defaultLocale: "en",
-    detectBrowserLanguage: false,
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      alwaysRedirect: true,
+    },
     strategy: "prefix_except_default",
     lazy: true,
     vueI18n: "./i18n.config.ts",

@@ -5,170 +5,101 @@ slug: example
 tags: ["database", "optimization", "indexing", "caching"]
 readingTime: 8
 published: true
-publishedAt: 2023/11/2
+publishedAt: 2024/11/2
 updatedAt: 2023/11/2
 ---
 
-# Develop
+> This article was created using ChatGPT and meant as a placeholder
 
-We love your input! We want to make contributing to Hoppscotch as easy and transparent as possible, whether it's:
+## What is Express.js?
 
-::list{type="success"}
+Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications. It facilitates the rapid development of Node-based web applications and is widely used to build APIs due to its simplicity and performance.
 
-- Reporting a bug
-- Discussing the current state of the code
-- Submitting a fix
-- Proposing new features
+## Step 1: Setting Up Your Environment
 
-::
+Before you start, ensure that you have Node.js installed on your system. You can download it from Node.js official website.
 
-## We develop with GitHub
+Once Node.js is installed, you can initiate your project:
 
-We use GitHub to host code, track issues, and feature requests, as well as accept pull requests.
+```bash
+mkdir my-express-api
+cd my-express-api
+npm init -y
+```
 
-**We use [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow), So all code changes happen through pull requests.**
+This creates a new directory for your project and initializes a new Node.js project.
 
-Pull requests are the best way to propose changes to the codebase (we use [GitHub Flow](https://guides.github.com/introduction/flow/index.html)). We actively welcome your pull requests.
+## Step 2: Installing Express.js
 
-## **Developing**
+Install Express.js using npm (Node Package Manager):
 
-::alert{type="info"}
-::list{type="info"}
+```bash
+Copy code
+npm install express --save
+This command installs Express.js and adds it to your project's dependencies.
+```
 
-- Section moved to [Self-Hosting](/documentation/self-host/getting-started).
+## Step 3: Creating Your First Express Server
 
-::
-::
+Create a file named app.js in your project directory. This file will be the entry point of your API. Add the following code to app.js:
 
-### Browser-based development environment
+```js
+Copy code
+const express = require('express');
+const app = express();
+const port = 3000;
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/hoppscotch/hoppscotch)
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
 
-### Local development environment
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`);
+});
+```
 
-::alert{type="info"}
-::list{type="info"}
+This code creates a basic Express server that listens on port 3000 and responds with "Hello World!" to HTTP GET requests to the root URL (/).
 
-- Section moved to [Self-Hosting](/documentation/self-host/getting-started).
+## Step 4: Running Your Express Server
 
-::
-::
+Run your server using Node.js:
 
-### Docker compose
+```bash
+Copy code
+node app.js
+Visit http://localhost:3000 in your browser. You should see the message "Hello World!".
+```
 
-::alert{type="info"}
-::list{type="info"}
+## Step 5: Building a Simple API
 
-- Section moved to [Self-Hosting](/documentation/self-host/getting-started).
+Now, let's expand our server to act as a simple API. For example, let's create an endpoint that returns a list of users.
 
-::
-::
+Add the following code to your app.js:
 
-## **Docker**
+```javascript
+Copy code
+let users = [{ name: "Alice" }, { name: "Bob" }];
 
-::alert{type="info"}
-::list{type="info"}
+app.get('/users', (req, res) => {
+  res.json(users);
+});
+```
 
-- Section moved to [Self-Hosting](/documentation/self-host/getting-started).
+Now, if you visit http://localhost:3000/users, you will see the JSON representation of the users array.
 
-::
-::
+## Step 6: Testing Your API
 
-## **Releasing**
+It’s important to test your API. You can use tools like Postman or curl to test your endpoints.
 
-::alert{type="info"}
-::list{type="info"}
+## Step 7: Next Steps
 
-- Section moved to [Self-Hosting](/documentation/self-host/getting-started).
+From here, you can start building more complex APIs. Consider the following:
 
-::
-::
+Implementing CRUD (Create, Read, Update, Delete) operations.
+Connecting your API to a database.
+Adding authentication and authorization.
+Organizing your code with routers and controllers.
 
-### Any contributions you make will be under the MIT Software License
+## Conclusion
 
-In short, when you submit code changes, your submissions are understood to be under the same [MIT License](https://choosealicense.com/licenses/mit) that covers the project. Feel free to contact the maintainers if that's a concern.
-
-#### Report bugs using GitHub's Issues
-
-We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/hoppscotch/hoppscotch/issues); it's that easy!
-
-#### Write bug reports with detail, background, and sample code
-
-[This is an example](https://stackoverflow.com/q/12088905/180626) of a bug report I wrote, and I think it's not a bad model. Here's [another example](https://www.openradar.me/11905408).
-
-**Great Bug Reports** tend to have:
-
-- A quick summary and/or background
-- Steps to reproduce
-  - Be specific!
-  - Give a sample code if you can.
-- What you expected would happen
-- What happens
-- Notes (possibly including why you think this might be happening, or stuff you tried that didn't work)
-
-People love thorough bug reports. I'm not even kidding.
-
-#### Use a consistent coding style
-
-I'm again borrowing these from [Facebook's Guidelines](https://reactjs.org/docs/how-to-contribute.html)
-
-- 2 spaces for indentation rather than tabs
-- You can try using Eslint code extensions in vs code or something similar.
-
-## Recommended VS Code extensions
-
-::list{type="success"}
-
-- WindiCSS IntelliSense
-
-  [Install](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense) • [Repository](https://github.com/windicss/windicss-intellisense)
-
-- Vue Language Features (Volar)
-
-  [Install](https://marketplace.visualstudio.com/items?itemName=vue.volar) • [Repository](https://github.com/johnsoncodehk/volar)
-
-- Stylelint
-
-  [Install](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint) • [Repository](https://github.com/stylelint/vscode-stylelint)
-
-- SCSS IntelliSense
-
-  [Install](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss) • [Repository](https://github.com/mrmlnc/vscode-scss)
-
-- SCSS Formatter
-
-  [Install](https://marketplace.visualstudio.com/items?itemName=sibiraj-s.vscode-scss-formatter) • [Repository](https://github.com/sibiraj-s/vscode-scss-formatter)
-
-- PostCSS Language Support
-
-  [Install](https://marketplace.visualstudio.com/items?itemName=csstools.postcss) • [Repository](https://github.com/csstools/postcss-language)
-
-- npm Intellisense
-
-  [Install](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense) • [Repository](https://github.com/ChristianKohler/NpmIntellisense)
-
-- JavaScript and TypeScript Nightly
-
-  [Install](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next) • [Repository](https://github.com/microsoft/vscode-typescript-next)
-
-- GraphQL
-
-  [Install](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql) • [Repository](https://github.com/graphql/vscode-graphql)
-
-- ESLint
-
-  [Install](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) • [Repository](https://github.com/Microsoft/vscode-eslint)
-
-- EditorConfig for VS Code
-
-  [Install](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) • [Repository](https://github.com/editorconfig/editorconfig-vscode)
-
-- npm
-
-  [Install](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) • [Repository](https://github.com/Microsoft/vscode-npm-scripts)
-
-::
-
-## License
-
-By contributing, you agree that your contributions will be licensed under [MIT License](https://github.com/hoppscotch/hoppscotch/blob/main/LICENSE).
+Express.js simplifies the process of building APIs in Node.js. It's a great starting point for developers looking to delve into backend development. With its minimalist approach, you have the freedom to structure your applications as you see fit, making Express.js an invaluable tool in your development toolkit.

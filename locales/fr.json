@@ -3,7 +3,8 @@
     "home": "Accueil",
     "projects": "Projets",
     "articles": "Articles",
-    "about": "À propos"
+    "about": "À propos",
+    "toggle_theme": "Changer de thème"
   },
   "pages": {
     "home": {

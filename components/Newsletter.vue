@@ -1,5 +1,5 @@
 <template>
-  <UCard>
+  <UCard class="dark:bg-gray-500/10 dark:ring-white/10">
     <div class="mb-3 flex items-center gap-3">
       <UChip color="neutral" standalone inset />
       <h2 class="uppercase text-xs font-semibold text-gray-400">
@@ -15,8 +15,57 @@
         icon="solar:letter-outline"
         class="flex-1"
         size="lg"
+        v-model.trim="email"
       />
-      <UButton label="Subscribe &rarr;" size="lg" />
+      <UButton
+        label="Subscribe &rarr;"
+        size="lg"
+        color="neutral"
+        :disabled="loading || !email"
+        @click="subscribe"
+      />
     </div>
   </UCard>
 </template>
+
+<script setup>
+import { ref } from "vue";
+
+const email = ref("");
+const message = ref("");
+const loading = ref(false);
+
+const subscribe = async () => {
+  if (!email.value || !email.value.includes("@")) {
+    message.value = "Please enter a valid email address.";
+    showToast(message.value);
+    return;
+  }
+  loading.value = true;
+  try {
+    const response = await $fetch("/api/subscribe", {
+      method: "POST",
+      body: { email: email.value },
+    });
+    message.value = response.message;
+    showToast(message.value, "success");
+    email.value = ""; // Clear the input after success
+    loading.value = false;
+  } catch (error) {
+    message.value = error?.data?.statusMessage || "An error occurred.";
+    showToast(message.value);
+    loading.value = false;
+  }
+};
+
+const toast = useToast();
+
+function showToast(msg, type = "error") {
+  toast.add({
+    title: "Newsletter",
+    description: msg,
+    color: type,
+    icon: "solar:letter-unread-outline",
+  });
+}
+</script>

@@ -3,7 +3,8 @@
     "home": "Home",
     "projects": "Projects",
     "articles": "Articles",
-    "about": "About"
+    "about": "About",
+    "toggle_theme": "Toggle Theme"
   },
   "pages": {
     "home": {

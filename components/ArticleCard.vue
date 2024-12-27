@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    :to="localePath({ name: 'article-slug', params: { slug: article.slug } })"
+    :to="$localePath({ name: 'articles-slug', params: { slug: article.slug } })"
     class="group"
   >
     <article>
@@ -13,7 +13,7 @@
         {{ $d(Date.parse(article.publishedAt), "short") }}
       </time>
       <h2
-        class="text-base font-semibold font-display tracking-tight text-gray-800 dark:text-gray-100 group-hover:text-primary-600"
+        class="text-base font-semibold transition-colors font-display tracking-tight text-gray-800 dark:text-gray-100 group-hover:text-primary-600"
       >
         {{ article.title }}
       </h2>
@@ -35,11 +35,11 @@
 </template>
 
 <script setup>
-const localePath = useLocalePath();
 defineProps({
   article: {
     type: Object,
     required: true,
   },
 });
+//
 </script>

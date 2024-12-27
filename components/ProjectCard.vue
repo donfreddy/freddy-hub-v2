@@ -6,13 +6,13 @@
     external
   >
     <div class="max-w-sm">
-      <h3 class="text-sm font-medium group-hover:text-primary-600">
+      <h3 class="text-sm font-medium transition-colors group-hover:text-primary-600">
         {{ project.name }}
       </h3>
       <p class="text-gray-400 text-sm">{{ project.description }}</p>
     </div>
     <div
-      class="flex-1 border-b border-dashed border-gray-300 dark:border-gray-800 group-hover:border-gray-700"
+      class="flex-1 border-b border-dashed transition-colors border-gray-300 dark:border-gray-800 group-hover:border-gray-700"
     ></div>
     <UAvatar
       :src="project.thumbnail"
