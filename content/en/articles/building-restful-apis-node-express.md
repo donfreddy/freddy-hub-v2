@@ -89,7 +89,6 @@ Hello [World]{style="color: green;" .custom-class #custom-id}!
 
 Attributes work on:
 
-- ![](/favicon.ico){style="display: inline; margin: 0;"} image,
 - [link](#attributes){style="background-color: pink;"}, `code`{style="color: cyan;"},
 - _italic_{style="background-color: yellow; color:black;"} and **bold**{style="background-color: lightgreen;"} texts.
 
