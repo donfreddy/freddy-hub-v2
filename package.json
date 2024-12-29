@@ -21,14 +21,15 @@
     "mongoose": "^8.9.2",
     "nodemailer": "^6.9.16",
     "nuxt": "^3.14.1592",
+    "pg": "^8.13.1",
     "vue": "latest",
     "vue-router": "latest",
     "vue-use-fixed-header": "^2.0.3"
   },
   "devDependencies": {
     "@iconify-json/solar": "^1.2.2",
+    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge",
     "typescript": "^5.7.2",
-    "vue-tsc": "^2.2.0",
-    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge"
+    "vue-tsc": "^2.2.0"
   }
 }
