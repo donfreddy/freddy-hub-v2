@@ -1,6 +1,5 @@
-import en from "./locales/en.json";
-import fr from "./locales/fr.json";
-
+import en from './locales/en-US.json';
+import fr from './locales/fr-FR.json';
 
 export default defineI18nConfig(() => ({
   legacy: false,
@@ -8,16 +7,16 @@ export default defineI18nConfig(() => ({
   datetimeFormats: {
     en: {
       short: {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
       },
     },
     fr: {
       short: {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
       },
     },
   },

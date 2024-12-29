@@ -9,7 +9,7 @@
     <div class="flex items-center justify-center mt-6 text-sm">
       <UButton
         :label="$t('pages.home.all_projects') + ' &rarr;'"
-        :to="$localePath('/projects')"
+        :to="localePath('/projects')"
         variant="link"
         color="gray"
       />
@@ -19,6 +19,7 @@
 
 <script setup>
 const { locale } = useI18n();
+const localePath = useLocalePath()
 
 const projects = await queryCollection(`projects_${locale.value}`).limit(3).all();
 </script>

@@ -12,10 +12,9 @@
   "dependencies": {
     "@nuxt/content": "^3.0.0-alpha.8",
     "@nuxt/image": "^1.8.1",
-    "@nuxt/ui": "^3.0.0-alpha.10",
+    "@nuxt/ui": "^3.0.0-alpha.8",
     "@nuxtjs/fontaine": "^0.4.4",
     "@nuxtjs/google-fonts": "^3.2.0",
-    "@nuxtjs/i18n": "^9.0.0-rc.2",
     "@vueuse/core": "^12.2.0",
     "@vueuse/nuxt": "^12.2.0",
     "moment": "^2.30.1",
@@ -29,6 +28,7 @@
   "devDependencies": {
     "@iconify-json/solar": "^1.2.2",
     "typescript": "^5.7.2",
-    "vue-tsc": "^2.2.0"
+    "vue-tsc": "^2.2.0",
+    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge"
   }
 }

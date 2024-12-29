@@ -1,6 +1,6 @@
 <template>
-  <NuxtLink
-    :to="$localePath({ name: 'articles-slug', params: { slug: article.slug } })"
+  <NuxtLinkLocale
+    :to="localePath({ name: 'articles-slug', params: { slug: article.slug } })"
     class="group"
   >
     <article>
@@ -31,10 +31,11 @@
         />
       </div>
     </article>
-  </NuxtLink>
+  </NuxtLinkLocale>
 </template>
 
 <script setup>
+const localePath = useLocalePath();
 defineProps({
   article: {
     type: Object,
