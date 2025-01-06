@@ -109,4 +109,9 @@ const passedDate = (value) => {
   return moment(value, "YYYYMMDD").fromNow();
 };
 </script>
-<style scoped></style>
+<style>
+.prose h2 a,
+.prose h3 a {
+  text-decoration: none;
+}
+</style>

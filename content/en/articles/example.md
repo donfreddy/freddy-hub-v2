@@ -2,7 +2,7 @@
 title: Example
 description: Learn how to optimize your database queries for maximum performance and reduced response times.
 slug: example
-tags: ["database", "optimization", "indexing", "caching"]
+tags: ['database', 'optimization', 'indexing', 'caching']
 readingTime: 8
 published: true
 publishedAt: 2024/11/2
@@ -16,6 +16,12 @@ updatedAt: 2023/11/2
 Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications. It facilitates the rapid development of Node-based web applications and is widely used to build APIs due to its simplicity and performance.
 
 ## Step 1: Setting Up Your Environment
+
+```js [file.js]{2} meta-info=val
+export default () => {
+  console.log('Code block');
+};
+```
 
 Before you start, ensure that you have Node.js installed on your system. You can download it from Node.js official website.
 

@@ -1,5 +1,5 @@
 <template>
-  <UApp :locale="locales[locale]">
+  <div>
     <NuxtLoadingIndicator color="var(--ui-primary)" />
     <AppNavbar />
     <div class="h-32"></div>
@@ -10,13 +10,11 @@
     </UContainer>
     <div class="h-32"></div>
     <AppFooter />
-  </UApp>
+  </div>
 </template>
 
 <script setup>
-import * as locales from "@nuxt/ui/locale";
-
-const { locale } = useI18n();
+// const { locale } = useI18n();
 </script>
 
 <style>

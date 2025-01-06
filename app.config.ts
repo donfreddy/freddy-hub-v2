@@ -1,11 +1,13 @@
 export default defineAppConfig({
   ui: {
-    colors: {
-      primary: "indigo",
-      neutral: "zinc",
-    },
+    primary: 'indigo',
+    gray: 'zinc',
+    // button: {
+    //   rounded:
+    //     "rounded-md transition-transform active:scale-x-[0.98] active:scale-y-[0.99]",
+    // },
     container: {
-      base: "max-w-3xl",
+      constrained: 'max-w-3xl',
     },
   },
 });

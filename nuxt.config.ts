@@ -39,9 +39,16 @@ export default defineNuxtConfig({
       appColor: options.loading.color,
     },
   },
-  css: ['~/assets/css/main.css'],
   modules: ['@nuxt/ui', '@nuxt/content', '@nuxtjs/i18n', '@nuxt/image', '@nuxtjs/google-fonts', '@vueuse/nuxt'],
   content: {
+    build: {
+      pathMeta: {},
+      markdown: {
+        highlight: {
+          theme: 'github-dark',
+        },
+      },
+    },
     studio: {
       enabled: true,
     },

@@ -1,7 +1,7 @@
 <template>
   <UCard class="dark:bg-gray-500/10 dark:ring-white/10">
     <div class="mb-3 flex items-center gap-3">
-      <UChip color="neutral" standalone inset />
+      <UChip color="primary" standalone />
       <h2 class="uppercase text-xs font-semibold text-gray-400">
         {{ $t("components.newsletter.title") }}
       </h2>
@@ -20,7 +20,7 @@
       <UButton
         label="Subscribe &rarr;"
         size="lg"
-        color="neutral"
+        color="black"
         :disabled="loading || !email"
         @click="subscribe"
       />

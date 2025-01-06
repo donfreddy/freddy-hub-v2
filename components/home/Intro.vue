@@ -20,7 +20,7 @@
     <div class="flex gap-3">
       <UButton
         @click="showToast"
-        color="neutral"
+        color="black"
         icon="solar:file-download-outline"
         variant="outline"
         size="sm"

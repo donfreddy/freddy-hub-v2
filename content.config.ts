@@ -1,6 +1,6 @@
-import { defineCollection, defineContentConfig, z } from "@nuxt/content";
+import { defineCollection, defineContentConfig, z } from '@nuxt/content';
 
-const locales = ["fr", "en"];
+const locales = ['fr', 'en'];
 
 export default defineContentConfig({
   collections: Object.fromEntries(
@@ -9,7 +9,7 @@ export default defineContentConfig({
         `articles_${locale}`,
         defineCollection({
           source: `${locale}/articles/*.md`,
-          type: "page",
+          type: 'page',
           schema: z.object({
             title: z.string(),
             description: z.string(),
@@ -26,7 +26,7 @@ export default defineContentConfig({
         `projects_${locale}`,
         defineCollection({
           source: `${locale}/projects/**.json`,
-          type: "data",
+          type: 'data',
           schema: z.object({
             name: z.string(),
             description: z.string(),
@@ -35,6 +35,7 @@ export default defineContentConfig({
           }),
         }),
       ]
-    ])
+    ]),
   ),
 });
+ 
