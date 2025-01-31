@@ -30,7 +30,12 @@
       "title": "Articles",
       "subtitle": "J'écris sur le développement d'applications, la technologie et mon parcours en tant que développeur. J'espère que vous trouverez quelque chose qui vous aide dans votre parcours en tant que développeur."
     },
-    "blog_detail": {},
+    "article_detail": {
+      "posted": "Publié {date}",
+      "updated": "Mis à jour {date}",
+      "reading": "{time} minutes de lecture",
+      "viewed": "Vu {count} fois"
+    },
     "about": {
       "title": "À propos de moi",
       "subtitle": "Je suis un développeur Web basé à Paris, en France. J'ai une passion pour la programmation et la technologie, et j'aime apprendre de nouvelles choses et partager mes connaissances avec les autres."

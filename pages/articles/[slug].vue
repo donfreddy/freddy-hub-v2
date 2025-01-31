@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="mx-auto py-14">
+    <div class="mx-auto">
       <div class="flex flex-col w-auto mb-20">
         <h1 class="text-xl font-bold text-fgColor sm:text-2xl md:text-4xl">
           {{ article.title }}
@@ -9,33 +9,39 @@
         <div
           class="flex flex-row items-center justify-start flex-1 space-x-1.5 text-xs my-6"
         >
-          <span>Posted {{ passedDate(article.publishedAt) }}</span>
+          <span>{{
+            $t("pages.article_detail.posted", { date: passedDate(article.publishedAt) })
+          }}</span>
 
           <div
             class="self-stretch h-5 w-0.5 bg-gradient-to-tr from-transparent via-gray-800 dark:via-white to-transparent opacity-20"
           ></div>
 
-          <span>Updated {{ passedDate(article.updatedAt) }}</span>
+          <span>{{
+            $t("pages.article_detail.updated", { date: passedDate(article.updatedAt) })
+          }}</span>
 
           <div
             class="self-stretch w-0.5 h-5 bg-gradient-to-tr from-transparent via-gray-800 dark:via-white to-transparent opacity-20"
           ></div>
-          <span>{{ article.readingTime }} minutes read</span>
+          <span>{{
+            $t("pages.article_detail.reading", { time: article.readingTime })
+          }}</span>
           <div
             class="self-stretch w-0.5 h-5 bg-gradient-to-tr from-transparent via-gray-800 dark:via-white to-transparent opacity-20"
           ></div>
-          <span>Viewed {{ views }} times</span>
+          <span>{{ $t("pages.article_detail.viewed", { count: views }) }}</span>
         </div>
 
         <!--  -->
-        <div class="inline-flex space-x-2 my-2">
+        <div class="inline-flex space-x-2">
           <UBadge
             v-for="tag in article.tags"
             :key="tag"
-            color="neutral"
+            color="black"
             variant="outline"
             :label="tag"
-            class="mr-2 text-xs"
+            class="text-xs"
           />
         </div>
 
@@ -44,7 +50,7 @@
 
         <!-- content -->
         <article
-          class="py-4 prose-sm prose-hub prose max-w-none md:prose-base prose-img:rounded-md"
+          class="prose-sm prose-hub prose max-w-none md:prose-base prose-img:rounded-md"
         >
           <ContentRenderer :value="article" />
         </article>

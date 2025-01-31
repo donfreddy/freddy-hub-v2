@@ -11,14 +11,14 @@
     </p>
     <div class="flex items-center gap-3 mt-6">
       <UInput
-        placeholder="youremail@gmail.com"
+        placeholder="johndoe@gmail.com"
         icon="solar:letter-outline"
         class="flex-1"
         size="lg"
         v-model.trim="email"
       />
       <UButton
-        label="Subscribe &rarr;"
+        :label="$t('components.newsletter.subscribe') + ' &rarr;'"
         size="lg"
         color="black"
         :disabled="loading || !email"

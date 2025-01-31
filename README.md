@@ -74,4 +74,29 @@ bun run preview
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
-# list all users endpoint wiht filter status in nestjs
+# LinkedIn posts
+
+Sure, here's a LinkedIn post for you:
+
+---
+
+💾 Master File Uploads in NestJS 🚀
+
+Struggling to implement file upload functionality in your backend? NestJS, combined with multer, makes it simple and efficient to handle single or multiple file uploads, customize storage options, and even serve uploaded files directly to your clients.
+
+In my latest blog post, I walk you through:
+✅ Setting up file upload functionality in NestJS
+✅ Handling single and multiple file uploads
+✅ Configuring file size limits and storage
+✅ Serving uploaded files seamlessly
+✅ Custom filter to handle file upload errors
+
+Whether you're building a platform for user profile pictures, document uploads, or media handling, this guide has you covered!
+
+🌐 Read the full blog post here: [Link to your blog]
+
+Let me know your thoughts or questions in the comments below!
+
+#NestJS #BackendDevelopment #FileUpload #NodeJS #WebDevelopment
+
+---
