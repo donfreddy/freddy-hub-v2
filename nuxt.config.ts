@@ -29,7 +29,13 @@ export default defineNuxtConfig({
         { name: 'X-UA-Compatible', content: 'IE=edge, chrome=1' },
         { name: 'keywords', content: options.keywords.join(', ') },
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      link: [
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'manifest', href: '/site.webmanifest' },
+      ],
       script: [],
     },
   },
@@ -61,7 +67,7 @@ export default defineNuxtConfig({
       useCookie: true,
       cookieKey: 'i18n_redirected',
       alwaysRedirect: false,
-      redirectOn: 'root'
+      redirectOn: 'root',
     },
     strategy: 'prefix_except_default',
     vueI18n: './i18n.config.ts',
