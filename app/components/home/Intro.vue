@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const toast = useToast();
+const { locale, t } = useI18n();
 
 const openMail = () => {
   const email = 'freddytamwo@gmai.com';
@@ -11,12 +12,23 @@ const openMail = () => {
   )}&body=${encodeURIComponent(body)}`;
 };
 
-function showToast() {
-  toast.add({
-    title: 'Uh oh! Something went wrong.',
-    description: 'There was a problem with your request.',
-    icon: 'solar:home-wifi-outline',
-  });
+function downloadCV() {
+  const fileName = `cv-${locale.value}.pdf`;
+  const filePath = `/${fileName}`;
+  const link = document.createElement('a');
+  link.href = filePath;
+  link.download = fileName;
+  link.click();
+
+  // show toast notification after 5 seconds
+  setTimeout(() => {
+    toast.add({
+      title: t('download.thank_you_title'),
+      description: t('download.thank_you_description'),
+      icon: 'i-tabler-heart-handshake',
+      color: 'success',
+    });
+  }, 5000);
 }
 </script>
 
@@ -42,7 +54,7 @@ function showToast() {
     </p>
     <div class="flex gap-3">
       <UButton
-        @click="showToast"
+        @click="downloadCV"
         color="neutral"
         icon="solar:file-download-outline"
         variant="outline"

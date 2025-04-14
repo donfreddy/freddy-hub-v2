@@ -48,5 +48,9 @@
       "subscribe": "S'abonner"
     },
     "footer": "Tous droits réservés"
+  },
+  "download": {
+    "thank_you_title": "Merci pour votre intérêt 🙏",
+    "thank_you_description": "J’espère que mon profil retiendra votre attention. N’hésitez pas à me contacter pour échanger !"
   }
 }

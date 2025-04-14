@@ -49,5 +49,9 @@
       "subscribe": "Subscribe"
     },
     "footer": "All Rights Reserved"
+  },
+  "download": {
+    "thank_you_title": "Thank you for your interest 🙏",
+    "thank_you_description": "I hope my profile stands out. Feel free to reach out for a chat!"
   }
 }

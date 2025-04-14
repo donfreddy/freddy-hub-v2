@@ -1,11 +1,15 @@
+<script setup lang="ts">
+const currentYear = new Date().getFullYear();
+</script>
+
 <template>
   <footer class="">
     <div
       class="flex flex-col-reverse items-center w-full max-w-3xl px-4 py-6 mx-auto text-center sm:flex-row sm:justify-between sm:px-6 lg:px-8"
     >
       <span class="text-sm/10 text-gray-500"
-        >Copyright &copy; {{ currentYear }} Don Freddy.
-        {{ $t("components.footer") }}</span
+      >Copyright &copy; {{ currentYear }} Don Freddy.
+        {{ $t('components.footer') }}</span
       >
       <ul class="flex flex-wrap mb-3 space-x-3 sm:mb-0">
         <!-- LinkedIn -->
@@ -84,9 +88,6 @@
   </footer>
 </template>
 
-<script setup lang="ts">
-const currentYear = new Date().getFullYear();
-</script>
 <style scoped>
 .social-icon {
   display: inline-flex;
@@ -95,6 +96,7 @@ const currentYear = new Date().getFullYear();
   color: var(--ui-text);
   transition: color 0.3s;
 }
+
 .social-icon:hover {
   color: var(--ui-primary);
 }
