@@ -62,7 +62,7 @@ const passedDate = (value) => {
         </h1>
 
         <div
-          class="flex flex-row items-center justify-start flex-1 space-x-1.5 text-xs my-6"
+          class="flex flex-row items-center justify-start flex-1 space-x-1.5 font-normal text-sm my-4"
         >
           <span>{{
             $t("pages.article_detail.posted", { date: passedDate(article.publishedAt) })
@@ -93,15 +93,15 @@ const passedDate = (value) => {
           <UBadge
             v-for="tag in article.tags"
             :key="tag"
-            color="black"
+            color="neutral"
             variant="outline"
             :label="tag"
-            class="text-xs"
+            size="md"
           />
         </div>
 
         <!-- Divider -->
-        <HorizontalBlurry />
+        <HorizontalBlurry class="my-8"/>
 
         <!-- content -->
         <article
@@ -111,7 +111,7 @@ const passedDate = (value) => {
         </article>
 
         <!-- Divider -->
-        <HorizontalBlurry />
+        <HorizontalBlurry class="my-8"/>
       </div>
     </div>
   </main>
