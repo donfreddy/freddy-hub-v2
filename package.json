@@ -10,18 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/content": "^3.0.0-alpha.8",
-    "@nuxt/image": "^1.8.1",
-    "@nuxt/ui": "^2.20.0",
-    "@nuxtjs/fontaine": "^0.4.4",
+    "@nuxt/content": "^3.4.0",
+    "@nuxt/image": "^1.10.0",
+    "@nuxt/ui": "^3.0.2",
+    "@nuxtjs/fontaine": "^0.5.0",
     "@nuxtjs/google-fonts": "^3.2.0",
-    "@vueuse/core": "^12.2.0",
-    "@vueuse/nuxt": "^12.2.0",
+    "@vueuse/core": "^13.1.0",
+    "@vueuse/nuxt": "^13.1.0",
     "moment": "^2.30.1",
-    "mongoose": "^8.9.2",
-    "nodemailer": "^6.9.16",
-    "nuxt": "^3.14.1592",
-    "pg": "^8.13.1",
+    "mongoose": "8.13.2",
+    "nodemailer": "^6.10.1",
+    "nuxt": "3.16.2",
     "vue": "latest",
     "vue-router": "latest",
     "vue-use-fixed-header": "^2.0.3"
@@ -29,7 +28,7 @@
   "devDependencies": {
     "@iconify-json/solar": "^1.2.2",
     "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge",
-    "typescript": "^5.7.2",
-    "vue-tsc": "^2.2.0"
+    "typescript": "^5.8.3",
+    "vue-tsc": "^2.2.8"
   }
 }
