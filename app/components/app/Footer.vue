@@ -3,7 +3,7 @@
     <div
       class="flex flex-col-reverse items-center w-full max-w-3xl px-4 py-6 mx-auto text-center sm:flex-row sm:justify-between sm:px-6 lg:px-8"
     >
-      <span class="text-sm text-gray-500"
+      <span class="text-sm/10 text-gray-500"
         >Copyright &copy; {{ currentYear }} Don Freddy.
         {{ $t("components.footer") }}</span
       >

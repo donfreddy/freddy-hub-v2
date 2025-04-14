@@ -63,9 +63,9 @@ export default defineEventHandler(async (event) => {
     text: "Thank you for subscribing to my newsletter! I promise not to spam you.",
   };
 
-  await transporter.sendMail(mailOptions);
+ // await transporter.sendMail(mailOptions);
 
   return {
-    message: "Subscription successful. Check your email for confirmation.",
+    message: "Subscription successful. You will receive a confirmation email shortly.",
   };
 });

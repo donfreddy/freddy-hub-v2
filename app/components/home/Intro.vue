@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const { t } = useI18n();
 const toast = useToast();
 
 const openMail = () => {
@@ -32,22 +31,23 @@ function showToast() {
       placeholder
       format="pmg"
     />
-    <h1 class="text-2xl font-bold tracking-tight text-gray-800 dark:text-gray-100">
+    <h1 class="text-3xl font-bold tracking-tight ">
       {{ $t('pages.home.title') }}
     </h1>
-    <p class="text-gray-900 dark:text-gray-400">
+    <p>
       {{ $t('pages.home.subtitle') }}
     </p>
-    <p class="text-gray-900 dark:text-gray-400">
+    <p>
       {{ $t('pages.home.subtitle2') }}
     </p>
     <div class="flex gap-3">
       <UButton
         @click="showToast"
-        color="black"
+        color="neutral"
         icon="solar:file-download-outline"
         variant="outline"
         size="sm"
+        class="cursor-pointer transition duration-300 ease-in-out"
       >{{ $t('pages.home.action_download') }}
       </UButton
       >
@@ -58,6 +58,7 @@ function showToast() {
         icon="solar:letter-outline"
         variant="outline"
         size="sm"
+        class="cursor-pointer transition duration-300 ease-in-out"
       >{{ $t('pages.home.action_get_in_touch') }}
       </UButton
       >
