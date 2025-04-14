@@ -45,7 +45,7 @@
 
 <script setup lang="ts">
 import { useMouseInElement } from '@vueuse/core';
-import BaseSpotlightCard from '~/components/BaseSpotlightCard.vue';
+import BaseSpotlightCard from '~/app/components/BaseSpotlightCard.vue';
 
 const props = defineProps({
   as: {

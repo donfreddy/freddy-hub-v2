@@ -14,6 +14,9 @@ export const options = {
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
+  future: {
+    compatibilityVersion: 4
+  },
   devtools: { enabled: true },
   //typescript: { typeCheck: true },
   app: {
@@ -25,12 +28,9 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'X-UA-Compatible', content: 'IE=edge, chrome=1' },
         { name: 'keywords', content: options.keywords.join(', ') },
-        // { itemprop: 'name', content: `${options.name} • ${options.shortDescription}` },
-        // { itemprop: 'description', name: 'description', content: options.description },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
       script: [],
-      noscript: [{ children: 'JavaScript is required' }],
     },
   },
   runtimeConfig: {
@@ -39,7 +39,8 @@ export default defineNuxtConfig({
       appColor: options.loading.color,
     },
   },
-  modules: ['@nuxt/ui', '@nuxt/content', '@nuxtjs/i18n', '@nuxt/image', '@nuxtjs/google-fonts', '@vueuse/nuxt'],
+  css: ['~/assets/css/main.css'],
+  modules: ['@nuxt/ui', '@nuxt/content', '@nuxtjs/i18n', '@nuxt/image', '@vueuse/nuxt'],
   content: {
     build: {
       pathMeta: {},
@@ -48,9 +49,6 @@ export default defineNuxtConfig({
           theme: 'github-dark',
         },
       },
-    },
-    studio: {
-      enabled: true,
     },
   },
   i18n: {
@@ -72,11 +70,5 @@ export default defineNuxtConfig({
     },
     strategy: 'prefix_except_default',
     vueI18n: './i18n.config.ts',
-  },
-  googleFonts: {
-    display: 'swap',
-    families: {
-      Inter: [400, 500, 600, 700, 800, 900],
-    },
   },
 });

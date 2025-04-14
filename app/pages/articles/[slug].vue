@@ -63,7 +63,7 @@
 </template>
 <script setup>
 import moment from "moment";
-import localeConfig from "../../utils/local-config";
+import localeConfig from "~/app/utils/local-config.js";
 
 const route = useRoute();
 const { slug } = route.params;

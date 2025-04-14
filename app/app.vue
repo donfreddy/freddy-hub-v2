@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <UApp>
     <NuxtLoadingIndicator color="var(--ui-primary)" />
     <AppNavbar />
     <div class="h-32"></div>
@@ -10,7 +10,7 @@
     </UContainer>
     <div class="h-32"></div>
     <AppFooter />
-  </div>
+  </UApp>
 </template>
 
 <script setup>
