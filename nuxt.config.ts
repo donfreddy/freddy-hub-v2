@@ -2,7 +2,7 @@ export const options = {
   name: 'Don Freddy',
   shortDescription: 'A blag platform where I share my thoughts and ideas about software development.',
   description:
-    "Freddy's Hub is a blog where I share my thoughts and ideas about software development and  technology in general.",
+    'Freddy\'s Hub is a blog where I share my thoughts and ideas about software development and  technology in general.',
   url: 'https://donfreddy.com',
   loading: {
     color: 'var(--ui-primary)',
@@ -15,7 +15,7 @@ export const options = {
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   future: {
-    compatibilityVersion: 4
+    compatibilityVersion: 4,
   },
   devtools: { enabled: true },
   //typescript: { typeCheck: true },
@@ -53,22 +53,20 @@ export default defineNuxtConfig({
   },
   i18n: {
     locales: [
-      {
-        code: 'en',
-        name: 'English',
-      },
-      {
-        code: 'fr',
-        name: 'Français',
-      },
+      { code: 'en', name: 'English', file: 'en-US.json' },
+      { code: 'fr', name: 'Français', file: 'fr-FR.json' },
     ],
     defaultLocale: 'en',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
-      alwaysRedirect: true,
+      alwaysRedirect: false,
+      redirectOn: 'root'
     },
     strategy: 'prefix_except_default',
     vueI18n: './i18n.config.ts',
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
   },
 });

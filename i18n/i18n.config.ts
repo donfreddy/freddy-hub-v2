@@ -1,5 +1,5 @@
-import en from './locales/en-US.json';
-import fr from './locales/fr-FR.json';
+import en from '~~/i18n/locales/en-US.json';
+import fr from '~~/i18n/locales/fr-FR.json';
 
 export default defineI18nConfig(() => ({
   legacy: false,

@@ -38,6 +38,9 @@ importers:
       nuxt:
         specifier: 3.16.2
         version: 3.16.2(@parcel/watcher@2.5.1)(better-sqlite3@11.9.1)(db0@0.3.1(better-sqlite3@11.9.1))(eslint@9.24.0(jiti@2.4.2))(ioredis@5.6.1)(lightningcss@1.29.2)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(vite@6.2.6(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.1))(vue-tsc@2.2.8(typescript@5.8.3))(yaml@2.7.1)
+      tailwindcss:
+        specifier: ^4.1.4
+        version: 4.1.4
       vue:
         specifier: latest
         version: 3.5.13(typescript@5.8.3)
@@ -52,7 +55,7 @@ importers:
         specifier: ^1.2.2
         version: 1.2.2
       '@nuxtjs/i18n':
-        specifier: npm:@nuxtjs/i18n-edge
+        specifier: npm:@nuxtjs/i18n-edge@9.5.3-29068367.7a048a9
         version: '@nuxtjs/i18n-edge@9.5.3-29068367.7a048a9(@vue/compiler-dom@3.5.13)(eslint@9.24.0(jiti@2.4.2))(magicast@0.3.5)(rollup@4.40.0)(vue@3.5.13(typescript@5.8.3))'
       typescript:
         specifier: ^5.7.3

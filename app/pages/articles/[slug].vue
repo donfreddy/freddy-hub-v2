@@ -1,3 +1,58 @@
+<script setup>
+import moment from "moment";
+import localeConfig from "~/utils/local-config.js";
+
+const route = useRoute();
+const { slug } = route.params;
+
+const { locale } = useI18n();
+
+const views = ref(0);
+// onMounted(async () => {
+//   // Check localStorage to avoid duplicate calls
+//   const viewedPages = JSON.parse(localStorage.getItem("viewed_pages") || "[]");
+//   if (viewedPages.includes(slug)) return;
+
+//   try {
+//     const { views: currentViews } = await $fetch(`/api/views?slug=${slug}`, {
+//       method: "POST",
+//     });
+//     console.log("currentViews", currentViews);
+
+//     views.value = currentViews;
+
+//     // Mark the page as viewed
+//     viewedPages.push(slug);
+//     localStorage.setItem("viewed_pages", JSON.stringify(viewedPages));
+//   } catch (error) {
+//     console.error("Failed to save view count:", error);
+//   }
+// });
+
+const { data: article } = await useAsyncData(slug, () =>
+  queryCollection(`articles_${locale.value}`)
+    .where("slug", "=", slug)
+    .select(
+      "title",
+      "slug",
+      "description",
+      "tags",
+      "body",
+      "readingTime",
+      "publishedAt",
+      "updatedAt"
+    )
+    .first()
+);
+
+const passedDate = (value) => {
+  locale.value === "fr"
+    ? moment.updateLocale(locale.value, localeConfig.fr)
+    : moment.locale("en");
+  return moment(value, "YYYYMMDD").fromNow();
+};
+</script>
+
 <template>
   <main>
     <div class="mx-auto">
@@ -61,60 +116,7 @@
     </div>
   </main>
 </template>
-<script setup>
-import moment from "moment";
-import localeConfig from "~/app/utils/local-config.js";
 
-const route = useRoute();
-const { slug } = route.params;
-
-const { locale } = useI18n();
-
-const views = ref(0);
-// onMounted(async () => {
-//   // Check localStorage to avoid duplicate calls
-//   const viewedPages = JSON.parse(localStorage.getItem("viewed_pages") || "[]");
-//   if (viewedPages.includes(slug)) return;
-
-//   try {
-//     const { views: currentViews } = await $fetch(`/api/views?slug=${slug}`, {
-//       method: "POST",
-//     });
-//     console.log("currentViews", currentViews);
-
-//     views.value = currentViews;
-
-//     // Mark the page as viewed
-//     viewedPages.push(slug);
-//     localStorage.setItem("viewed_pages", JSON.stringify(viewedPages));
-//   } catch (error) {
-//     console.error("Failed to save view count:", error);
-//   }
-// });
-
-const { data: article } = await useAsyncData(slug, () =>
-  queryCollection(`articles_${locale.value}`)
-    .where("slug", "=", slug)
-    .select(
-      "title",
-      "slug",
-      "description",
-      "tags",
-      "body",
-      "readingTime",
-      "publishedAt",
-      "updatedAt"
-    )
-    .first()
-);
-
-const passedDate = (value) => {
-  locale.value === "fr"
-    ? moment.updateLocale(locale.value, localeConfig.fr)
-    : moment.locale("en");
-  return moment(value, "YYYYMMDD").fromNow();
-};
-</script>
 <style>
 .prose h2 a,
 .prose h3 a {

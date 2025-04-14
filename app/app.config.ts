@@ -5,7 +5,7 @@ export default defineAppConfig({
       neutral: 'zinc',
     },
     container: {
-      constrained: 'max-w-3xl',
-    },
+      base: 'w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8'
+    }
   },
 });
