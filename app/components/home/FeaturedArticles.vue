@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div style="--stagger: 5"
+       data-animate>
     <h2 class="uppercase text-xs font-semibold text-gray-400 mb-6">
       {{ $t("pages.home.recent_articles") }}
     </h2>

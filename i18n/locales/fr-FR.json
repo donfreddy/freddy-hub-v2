@@ -52,5 +52,10 @@
   "download": {
     "thank_you_title": "Merci pour votre intérêt 🙏",
     "thank_you_description": "J’espère que mon profil retiendra votre attention. N’hésitez pas à me contacter pour échanger !"
+  },
+  "global": {
+    "meeting": "Planifier une réunion",
+    "available": "Disponible pour de nouvelles opportunités",
+    "unavailable": "Actuellement en train de travailler sur d'autres projets géniaux"
   }
 }

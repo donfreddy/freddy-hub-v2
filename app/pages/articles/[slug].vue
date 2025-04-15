@@ -255,20 +255,6 @@ const passedDate = (value) => {
 }
 
 
-.prose :where(ol[type="I" ]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-
-  list-style-type: upper-roman
-
-}
-
-
-.prose :where(ol[type="i" ]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-
-  list-style-type: lower-roman
-
-}
-
-
 .prose :where(ol[type="1"]):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
 
   list-style-type: decimal
@@ -340,8 +326,6 @@ const passedDate = (value) => {
   border-left-width: 0.25rem;
 
   border-left-color: var(--tw-prose-quote-borders);
-
-  //quotes: "\201C""\201D""\2018""\2019";
 
   margin-top: 1.6em;
 

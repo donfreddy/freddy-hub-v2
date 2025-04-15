@@ -12,6 +12,7 @@ useHead({
 <template>
   <UApp :locale="locales[locale]">
     <NuxtLoadingIndicator color="var(--ui-primary)" />
+    <SettingsLanguageToggle class="fixed right-5 z-50 bottom-5" />
     <AppNavbar />
     <div class="h-32"></div>
     <UContainer>
