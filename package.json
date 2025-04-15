@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "don-freddy-hub",
   "private": true,
   "type": "module",
   "scripts": {
@@ -7,7 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "typecheck": "nuxt typecheck"
   },
   "dependencies": {
     "@nuxt/content": "^3.4.0",
@@ -20,7 +22,6 @@
     "mongoose": "8.13.2",
     "nodemailer": "^6.10.1",
     "nuxt": "3.16.2",
-    "tailwindcss": "^4.1.4",
     "vue": "latest",
     "vue-router": "latest",
     "vue-use-fixed-header": "^2.0.3"
@@ -30,5 +31,6 @@
     "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge@9.5.3-29068367.7a048a9",
     "typescript": "^5.7.3",
     "vue-tsc": "^2.2.8"
-  }
+  },
+  "packageManager": "pnpm@10.7.0"
 }

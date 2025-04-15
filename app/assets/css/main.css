@@ -1,8 +1,8 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-@theme {
-    --font-sans: 'Inter', sans-serif;
-}
+@import "./animation.css";
 
-@source "../../../content";
+@theme {
+  --font-sans: 'Inter', sans-serif;
+}

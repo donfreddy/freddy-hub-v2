@@ -47,16 +47,6 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.css'],
   modules: ['@nuxt/ui', '@nuxt/content', '@nuxtjs/i18n', '@nuxt/image', '@vueuse/nuxt'],
-  content: {
-    build: {
-      pathMeta: {},
-      markdown: {
-        highlight: {
-          theme: 'github-dark',
-        },
-      },
-    },
-  },
   i18n: {
     locales: [
       { code: 'en', name: 'English', file: 'en-US.json' },

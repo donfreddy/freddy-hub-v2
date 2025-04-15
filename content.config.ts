@@ -8,7 +8,7 @@ export default defineContentConfig({
       [
         `articles_${locale}`,
         defineCollection({
-          source: `${locale}/articles/*.md`,
+          source: `${locale}/articles/**/*`,
           type: 'page',
           schema: z.object({
             title: z.string(),
@@ -38,4 +38,3 @@ export default defineContentConfig({
     ]),
   ),
 });
- 
