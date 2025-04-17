@@ -13,7 +13,7 @@ const switchLocalePath = useSwitchLocalePath();
 </script>
 
 <template>
-  <div class="z-99 flex items-center gap-3 rounded-lg border border-white/10 bg-zinc-900/90 px-3 py-1 backdrop-blur-xl">
+  <div class="z-99 flex items-center gap-3 rounded-lg border border-zinc-900/10 dark:border-white/10 bg-white/80 dark:bg-zinc-900/90 px-3 py-1 backdrop-blur-xl shadow-sm">
     <ClientOnly>
       <NuxtLink
         v-for="locale in locales"
@@ -22,8 +22,8 @@ const switchLocalePath = useSwitchLocalePath();
         :to="switchLocalePath(locale.code)"
       >
         <span
-          class="font-semibold"
-          :class="locale.code === currentLocale?.code ? 'text-white' : 'text-neutral-500'"
+          class="font-medium"
+          :class="locale.code === currentLocale?.code ? 'text-none' : 'text-neutral-500'"
         >
           {{ locale.code }}
         </span>
