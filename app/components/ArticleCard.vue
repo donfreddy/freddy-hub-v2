@@ -20,14 +20,14 @@
       <p class="relative z-10 mt-2 text-sm text-gray-600 dark:text-gray-400">
         {{ article.description }}
       </p>
-      <div class="inline-flex flex-wrap my-2.5">
+      <div class="inline-flex flex-wrap my-2">
         <UBadge
           v-for="tag in article.tags"
           :key="tag"
           color="neutral"
           variant="outline"
           :label="tag"
-          class="mr-2 text-xs"
+          class="mr-2 mb-2 sm:mb-0 text-xs"
         />
       </div>
     </article>

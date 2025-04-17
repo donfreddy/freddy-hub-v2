@@ -43,17 +43,16 @@ const meetingLink = useAppConfig().global.meetingLink
       class="ring-2 border ring-gray-200 border-gray-300 dark:ring-white/10 dark:border-gray-800 hover:ring-4 transition-all duration-300 bg-gray-200 dark:bg-gray-900 rounded-full h-12 w-12 sm:h-16 sm:w-16"
       sizes="48px sm:64px"
       placeholder
-      data-animate
       format="pmg"
     />
-    <div style="--stagger: 1; --delay: 10ms"
-         data-animate>
-      <h1 class="text-3xl font-bold tracking-tight mb-8">
+    <div class="mb-10">
+      <h1 class="text-2xl font-bold tracking-tight mb-6">
         {{ $t('pages.home.title') }}
       </h1>
       <p>
         {{ $t('pages.home.subtitle') }}
       </p>
+      <br />
       <p>
         {{ $t('pages.home.subtitle2') }}
       </p>
@@ -61,12 +60,9 @@ const meetingLink = useAppConfig().global.meetingLink
 
     <SettingsAvailability
       background
-      style="--stagger: 2"
-      data-animate
     />
 
-    <div class="flex gap-3" style="--stagger: 3"
-         data-animate>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
       <UButton
         :to="meetingLink"
         color="neutral"
@@ -75,6 +71,7 @@ const meetingLink = useAppConfig().global.meetingLink
         variant="outline"
         size="md"
         class="cursor-pointer transition duration-300 ease-in-out"
+        block
       >{{ $t("global.meeting") }}
       </UButton>
 
@@ -85,6 +82,7 @@ const meetingLink = useAppConfig().global.meetingLink
         variant="outline"
         size="md"
         class="cursor-pointer transition duration-300 ease-in-out"
+        block
       >{{ $t('pages.home.action_get_in_touch') }}
       </UButton>
 
@@ -95,6 +93,7 @@ const meetingLink = useAppConfig().global.meetingLink
         variant="outline"
         size="md"
         class="cursor-pointer transition duration-300 ease-in-out"
+        block
       >{{ $t('pages.home.action_download') }}
       </UButton>
 

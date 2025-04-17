@@ -1,8 +1,7 @@
 <template>
-  <div style="--stagger: 5"
-       data-animate>
+  <div>
     <h2 class="uppercase text-xs font-semibold text-gray-400 mb-6">
-      {{ $t("pages.home.recent_articles") }}
+      {{ $t('pages.home.recent_articles') }}
     </h2>
     <ul class="space-y-16">
       <li v-for="(article, id) in articles" :key="id">
@@ -22,13 +21,13 @@
 
 <script setup>
 const { locale } = useI18n();
-const localePath = useLocalePath()
+const localePath = useLocalePath();
 
-const { data: articles } = await useAsyncData("projects-home", () =>
+const { data: articles } = await useAsyncData('projects-home', () =>
   queryCollection(`articles_${locale.value}`)
-    .order("publishedAt", "DESC")
-    .select("title", "slug", "description", "tags", "publishedAt")
+    .order('publishedAt', 'DESC')
+    .select('title', 'slug', 'description', 'tags', 'publishedAt')
     .limit(3)
-    .all()
+    .all(),
 );
 </script>
