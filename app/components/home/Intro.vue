@@ -40,7 +40,7 @@ const meetingLink = useAppConfig().global.meetingLink
     <NuxtImg
       src="/avatar.png"
       alt="Don Freddy"
-      class="ring-2 border ring-gray-200 border-gray-300 dark:ring-white/10 dark:border-gray-800 hover:ring-4 transition-all duration-300 bg-gray-200 dark:bg-gray-900 rounded-full h-12 w-12 sm:h-16 sm:w-16"
+      class="ring-2 border ring-zinc-200 border-zinc-300 dark:ring-white/10 dark:border-zinc-800 hover:ring-4 transition-all duration-300 bg-zinc-200 dark:bg-zinc-900 rounded-full h-12 w-12 sm:h-16 sm:w-16"
       sizes="48px sm:64px"
       placeholder
       format="pmg"

@@ -30,7 +30,7 @@ const subscribe = async () => {
 
 const toast = useToast();
 
-function showToast(msg, type = 'error') {
+function showToast(msg:string, type = 'error') {
   toast.add({
     title: 'Newsletter',
     description: msg,
@@ -41,14 +41,18 @@ function showToast(msg, type = 'error') {
 </script>
 
 <template>
-  <UCard class="dark:bg-gray-500/10 dark:ring-white/10">
+  <UCard class="dark:bg-zinc-500/10 dark:ring-white/10">
     <div class="mb-3 inline-flex items-center gap-3">
-      <UChip color="primary" />
-      <h2 class="uppercase text-xs font-semibold text-gray-400">
+      <div
+        class="flex-none rounded-full p-1.5 text-primary-500 bg-primary-500/10"
+      >
+        <div class="size-2 rounded-full bg-current"></div>
+      </div>
+      <h2 class="uppercase text-xs font-semibold text-zinc-400">
         {{ $t('components.newsletter.title') }}
       </h2>
     </div>
-    <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+    <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
       {{ $t('components.newsletter.subtitle') }}
     </p>
     <div class="flex items-center gap-3 mt-6">

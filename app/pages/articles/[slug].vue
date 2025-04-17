@@ -79,7 +79,7 @@ const passedDate = (value) => {
             }}</span>
 
           <div
-            class="self-stretch h-5 w-0.5 bg-gradient-to-tr from-transparent via-gray-800 dark:via-white to-transparent opacity-20"
+            class="self-stretch h-5 w-0.5 bg-gradient-to-tr from-transparent via-zinc-800 dark:via-white to-transparent opacity-20"
           ></div>
 
           <span>{{
@@ -87,13 +87,13 @@ const passedDate = (value) => {
             }}</span>
 
           <div
-            class="self-stretch w-0.5 h-5 bg-gradient-to-tr from-transparent via-gray-800 dark:via-white to-transparent opacity-20"
+            class="self-stretch w-0.5 h-5 bg-gradient-to-tr from-transparent via-zinc-800 dark:via-white to-transparent opacity-20"
           ></div>
           <span>{{
               $t('pages.article_detail.reading', { time: article.readingTime })
             }}</span>
           <div
-            class="self-stretch w-0.5 h-5 bg-gradient-to-tr from-transparent via-gray-800 dark:via-white to-transparent opacity-20"
+            class="self-stretch w-0.5 h-5 bg-gradient-to-tr from-transparent via-zinc-800 dark:via-white to-transparent opacity-20"
           ></div>
           <span>{{ $t('pages.article_detail.viewed', { count: views }) }}</span>
         </div>

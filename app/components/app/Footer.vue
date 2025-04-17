@@ -30,15 +30,4 @@ const { socials } = useAppConfig();
 </template>
 
 <style scoped>
-.social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--ui-text);
-  transition: color 0.3s;
-}
-
-.social-icon:hover {
-  color: var(--ui-primary);
-}
 </style>

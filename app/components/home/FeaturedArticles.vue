@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="uppercase text-xs font-semibold text-gray-400 mb-6">
+    <h2 class="uppercase text-xs font-semibold text-zinc-400 mb-6">
       {{ $t('pages.home.recent_articles') }}
     </h2>
     <ul class="space-y-16">
@@ -13,7 +13,7 @@
         :label="$t('pages.home.all_articles') + ' &rarr;'"
         :to="localePath('/articles')"
         variant="link"
-        color="gray"
+        color="zinc"
       />
     </div>
   </div>
