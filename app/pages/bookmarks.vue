@@ -1,8 +1,11 @@
 <script setup lang="ts">
-const description =
-  'Awesome things I\'ve found on the internet. This page is still WIP, I want to add search like bmrks.com';
+const { t, locale } = useI18n();
+const { me } = useAppConfig();
+
+const description = t('pages.bookmarks.subtitle');
+
 useSeoMeta({
-  title: 'Bookmarks | Fayaz Ahmed',
+  title: `${t('pages.bookmarks.title')} | ${me.fullName}`,
   description,
 });
 
@@ -19,8 +22,8 @@ const bookmarks = [
   },
   {
     id: 3,
-    label: "Dicebear - Avatar generator",
-    url: "https://www.dicebear.com",
+    label: 'Dicebear - Avatar generator',
+    url: 'https://www.dicebear.com',
   },
   {
     id: 4,
@@ -71,7 +74,7 @@ function getThumbnail(url: string) {
 
 <template>
   <main class="min-h-screen">
-    <AppHeader class="mb-8" title="Bookmarks" :description="description" />
+    <AppHeader class="mb-12" :title="$t('nav.bookmarks')" :description="description" />
     <ul class="space-y-2">
       <li v-for="bookmark in bookmarks" :key="bookmark.id">
         <a

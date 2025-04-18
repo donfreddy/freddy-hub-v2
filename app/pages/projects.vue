@@ -1,9 +1,10 @@
 <script setup lang="ts">
 const { t, locale } = useI18n();
+const { me } = useAppConfig();
 
 const description = t('pages.projects.subtitle');
 useSeoMeta({
-  title: `${t('nav.projects')} | Don Freddy`,
+  title: `${t('pages.projects.title')} | ${me.fullName}`,
   description,
 });
 
@@ -18,5 +19,3 @@ const projects = await queryCollection(`projects_${locale.value}`).all();
     </div>
   </main>
 </template>
-
-<style></style>

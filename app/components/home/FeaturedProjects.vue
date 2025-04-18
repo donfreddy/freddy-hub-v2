@@ -1,3 +1,10 @@
+<script setup lang="ts">
+const { locale } = useI18n();
+const localePath = useLocalePath()
+
+const projects = await queryCollection(`projects_${locale.value}`).limit(3).all();
+</script>
+
 <template>
   <div>
     <h2 class="uppercase text-xs font-semibold text-zinc-400 mb-6">
@@ -16,10 +23,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-const { locale } = useI18n();
-const localePath = useLocalePath()
-
-const projects = await queryCollection(`projects_${locale.value}`).limit(3).all();
-</script>

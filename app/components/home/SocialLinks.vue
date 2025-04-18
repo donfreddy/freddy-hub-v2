@@ -4,7 +4,7 @@ const { socials } = useAppConfig();
 
 <template>
   <div>
-    <h2 class="uppercase text-xs font-semibold text-zinc-400 mb-4">FIND ME ON</h2>
+    <h2 class="uppercase text-xs font-semibold text-zinc-400 mb-4">{{ $t('pages.home.find_me') }}</h2>
     <div class="space-y-5">
       <NuxtLink
         v-for="social in socials"

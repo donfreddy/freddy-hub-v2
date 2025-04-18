@@ -13,6 +13,7 @@
       "title": "Hi, I’m Don Freddy",
       "subtitle": "I work as a software engineer from Douala, Cameroon. I specialize in building web and mobile applications and sites using Javascript, Vue & Node. I've procrastinated building this website for years but finally it's here, I've carved out my own little nook on the internet to share my silly experiments, nifty projects, and thoughts (mostly about tech).",
       "subtitle2": "By day, I'm a Fullstack Developer at Maliya, and by night (and weekends), I'm busy tinkering with some random tool or app that I am building",
+      "find_me": "Find me on",
       "action_download": "Download my resume",
       "action_get_in_touch": "Get in touch",
       "featured_projects": "Featured Projects",
@@ -20,7 +21,7 @@
       "all_projects": "All Projects",
       "all_articles": "All Articles",
       "meta": {
-        "title": "Don Freddy | Software Engineer",
+        "title": "Software Engineer",
         "description": "I work as a software engineer from Douala, Cameroon. I specialize in building web and mobile applications and sites using Javascript, Vue & Node."
       }
     },
@@ -35,6 +36,10 @@
     "whats_in_my_bag": {
       "title": "Things I use",
       "subtitle": "Software I use, gadgets I love, and other things I recommend. Here’s a big list of all of my favorite stuff."
+    },
+    "bookmarks": {
+      "title": "Bookmarks",
+      "subtitle": "I’ve found some great stuff on the internet. This page is still in development, I want to add a search engine like bmrks.com."
     },
     "article_detail": {
       "posted": "Posted {date}",

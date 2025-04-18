@@ -13,6 +13,7 @@
       "title": "Salut, je suis Don Freddy",
       "subtitle": "Je travaille comme ingénieur logiciel à Douala, au Cameroun. Je me spécialise dans la création d'applications et de sites Web et mobiles utilisant Javascript, Vue et Node. J'ai tergiversé sur la création de ce site Web pendant des années, mais il est enfin là, j'ai créé mon propre petit coin sur Internet pour partager mes expériences idiotes, mes projets astucieux et mes réflexions (principalement sur la technologie).",
       "subtitle2": "Le jour, je suis développeur Fullstack chez Maliya, et la nuit (et le week-end), je suis occupé à bricoler avec un outil ou une application aléatoire que je construis",
+      "find_me": "Trouvez-moi sur",
       "action_download": "Télécharger mon CV",
       "action_get_in_touch": "Entrer en contact",
       "featured_projects": "Projets en vedette",
@@ -20,7 +21,7 @@
       "all_projects": "Tous les projets",
       "all_articles": "Tous les articles",
       "meta": {
-        "title": "Don Freddy | Ingénieur logiciel",
+        "title": "Ingénieur logiciel",
         "description": "Je travaille comme ingénieur logiciel à Douala, au Cameroun. Je me spécialise dans la création d'applications et de sites Web et mobiles utilisant Javascript, Vue et Node."
       }
     },
@@ -35,6 +36,10 @@
     "whats_in_my_bag": {
       "title": "Les choses que j'utilise",
       "subtitle": "Logiciels que j'utilise, gadgets que j'adore et autres choses que je recommande. Voici une grande liste de toutes mes affaires préférées."
+    },
+    "bookmarks": {
+      "title": "Marque-pages",
+      "subtitle": "J'ai trouvé des choses géniales sur Internet. Cette page est encore en cours de développement, je souhaite ajouter un moteur de recherche comme bmrks.com."
     },
     "article_detail": {
       "posted": "Publié {date}",

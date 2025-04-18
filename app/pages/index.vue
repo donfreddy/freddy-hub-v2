@@ -1,8 +1,9 @@
-<script setup>
+<script setup lang="ts">
 const { t } = useI18n();
+const { me } = useAppConfig();
 
 useSeoMeta({
-  title: t('pages.home.meta.title'),
+  title: `${me.fullName} | ${t('pages.home.meta.title')} `,
   description: t('pages.home.meta.description'),
 });
 </script>
