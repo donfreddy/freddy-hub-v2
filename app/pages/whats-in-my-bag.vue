@@ -33,14 +33,14 @@ const [hardware, software, desk, other] = await Promise.all(
         <AppUsesHeader :title="$t('categories.software')" />
         <AppUsesItem v-for="(item, id) in software" :key="id" :item="item" />
       </ul>
-      <ul class="space-y-8">
-        <AppUsesHeader :title="$t('categories.desk')" />
-        <AppUsesItem v-for="(item, id) in desk" :key="id" :item="item" />
-      </ul>
-      <ul class="space-y-8">
-        <AppUsesHeader :title="$t('categories.others')" />
-        <AppUsesItem v-for="(item, id) in other" :key="id" :item="item" />
-      </ul>
+      <!--      <ul class="space-y-8">
+              <AppUsesHeader :title="$t('categories.desk')" />
+              <AppUsesItem v-for="(item, id) in desk" :key="id" :item="item" />
+            </ul>
+            <ul class="space-y-8">
+              <AppUsesHeader :title="$t('categories.others')" />
+              <AppUsesItem v-for="(item, id) in other" :key="id" :item="item" />
+            </ul>-->
     </div>
   </main>
 </template>

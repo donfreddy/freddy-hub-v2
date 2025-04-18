@@ -11,8 +11,8 @@
   "pages": {
     "home": {
       "title": "Hi, I’m Don Freddy",
-      "subtitle": "I work as a software engineer from Douala, Cameroon. I specialize in building web and mobile applications and sites using Javascript, Vue & Node. I've procrastinated building this website for years but finally it's here, I've carved out my own little nook on the internet to share my silly experiments, nifty projects, and thoughts (mostly about tech).",
-      "subtitle2": "By day, I'm a Fullstack Developer at Maliya, and by night (and weekends), I'm busy tinkering with some random tool or app that I am building",
+      "subtitle": "I'm a fullstack developer with over 6 years of experience, based in Douala, Cameroon. I specialize in building modern web and mobile applications, mainly using JavaScript, Vue.js, and Node.js.",
+      "subtitle2": "For years, I kept putting off building this website — but it's finally here. My little corner of the Internet, where I share tech experiments, thoughts (mostly about tech), and occasionally some quirky experiences. Welcome to my space!",
       "find_me": "Find me on",
       "action_download": "Download my resume",
       "action_get_in_touch": "Get in touch",

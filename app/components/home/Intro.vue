@@ -58,9 +58,7 @@ const meetingLink = useAppConfig().global.meetingLink
       </p>
     </div>
 
-    <SettingsAvailability
-      background
-    />
+    <SettingsAvailability />
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
       <UButton

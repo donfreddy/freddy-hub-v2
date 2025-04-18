@@ -7,6 +7,8 @@ const lang = computed(() => locales[locale.value].code);
 useHead({
   htmlAttrs: { lang },
 });
+
+// https://github.com/fayazara/zooper
 </script>
 
 <template>
