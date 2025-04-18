@@ -55,6 +55,11 @@ const bookmarks = [
     label: 'IP API - IP geolocation API',
     url: 'https://ipapi.is/',
   },
+  {
+    id: 10,
+    label: 'myNoise - Custom Soundscapes to Focus, Relax & Sleep',
+    url: 'https://mynoise.net/',
+  },
 ];
 
 function getHost(url: string) {
