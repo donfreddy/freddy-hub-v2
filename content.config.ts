@@ -2,6 +2,31 @@ import { defineCollection, defineContentConfig, z } from '@nuxt/content';
 
 const locales = ['fr', 'en'];
 
+const articleSchema = z.object({
+  title: z.string().nonempty(),
+  description: z.string().nonempty(),
+  slug: z.string().nonempty(),
+  tags: z.array(z.string()).nonempty(),
+  readingTime: z.number().min(0), // in minutes
+  published: z.boolean(),
+  publishedAt: z.date(),
+  updatedAt: z.date(),
+});
+
+const baseSchema = {
+  name: z.string().nonempty(),
+  description: z.string().nonempty(),
+  url: z.string().url(),
+  thumbnail: z.string().url(),
+};
+
+const projectSchema = z.object(baseSchema);
+
+const useSchema = z.object({
+  ...baseSchema,
+  category: z.string().nonempty(),
+});
+
 export default defineContentConfig({
   collections: Object.fromEntries(
     locales.flatMap((locale) => [
@@ -10,16 +35,7 @@ export default defineContentConfig({
         defineCollection({
           source: `${locale}/articles/**/*`,
           type: 'page',
-          schema: z.object({
-            title: z.string(),
-            description: z.string(),
-            slug: z.string(),
-            tags: z.array(z.string()),
-            readingTime: z.number(), // in minutes
-            published: z.boolean(),
-            publishedAt: z.date(),
-            updatedAt: z.date(),
-          }),
+          schema: articleSchema,
         }),
       ],
       [
@@ -27,14 +43,17 @@ export default defineContentConfig({
         defineCollection({
           source: `${locale}/projects/**.json`,
           type: 'data',
-          schema: z.object({
-            name: z.string(),
-            description: z.string(),
-            url: z.string().url(),
-            thumbnail: z.string(),
-          }),
+          schema: projectSchema,
         }),
-      ]
+      ],
+      [
+        `uses_${locale}`,
+        defineCollection({
+          source: `${locale}/uses/**.json`,
+          type: 'data',
+          schema: useSchema,
+        }),
+      ],
     ]),
   ),
 });

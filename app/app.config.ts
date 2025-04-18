@@ -3,8 +3,8 @@ export default defineAppConfig({
     meetingLink: 'https://cal.com/donfreddy/15min',
     available: true,
   },
-  profile: {
-    name: 'Don Freddy',
+  me: {
+    fullName: 'Don Freddy',
     job: 'Fullstack Developer',
     email: 'freddytamwo@gmail.com',
     phone: '(+237) 6 71 84 27 01',

@@ -3,6 +3,8 @@
     "home": "Accueil",
     "projects": "Projets",
     "articles": "Articles",
+    "whats_in_my_bag": "Qu'y a-t-il dans mon sac ?",
+    "bookmarks": "Marque-pages",
     "about": "À propos",
     "toggle_theme": "Changer de thème"
   },
@@ -29,6 +31,10 @@
     "articles": {
       "title": "Articles",
       "subtitle": "J'écris sur le développement d'applications, la technologie et mon parcours en tant que développeur. J'espère que vous trouverez quelque chose qui vous aide dans votre parcours en tant que développeur."
+    },
+    "whats_in_my_bag": {
+      "title": "Les choses que j'utilise",
+      "subtitle": "Logiciels que j'utilise, gadgets que j'adore et autres choses que je recommande. Voici une grande liste de toutes mes affaires préférées."
     },
     "article_detail": {
       "posted": "Publié {date}",
@@ -57,5 +63,11 @@
     "meeting": "Planifier une réunion",
     "available": "Disponible pour de nouvelles opportunités",
     "unavailable": "Actuellement en train de travailler sur d'autres projets géniaux"
+  },
+  "categories": {
+    "hardware": "Matériel",
+    "software": "Logiciel",
+    "desk": "Bureau",
+    "others": "Autres"
   }
 }

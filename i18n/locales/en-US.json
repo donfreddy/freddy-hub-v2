@@ -3,6 +3,8 @@
     "home": "Home",
     "projects": "Projects",
     "articles": "Articles",
+    "whats_in_my_bag": "What's in my bag?",
+    "bookmarks": "Bookmarks",
     "about": "About",
     "toggle_theme": "Toggle Theme"
   },
@@ -29,6 +31,10 @@
     "articles": {
       "title": "Articles",
       "subtitle": "I write about app development, tech, and my journey as a developer. I hope you find something that helps you on your journey as a developer."
+    },
+    "whats_in_my_bag": {
+      "title": "Things I use",
+      "subtitle": "Software I use, gadgets I love, and other things I recommend. Here’s a big list of all of my favorite stuff."
     },
     "article_detail": {
       "posted": "Posted {date}",
@@ -58,5 +64,11 @@
     "meeting": "Schedule a meeting",
     "available": "Available for new opportunities",
     "unavailable": "Currently working on other awesome projects"
+  },
+  "categories": {
+    "hardware": "Hardware",
+    "software": "Software",
+    "desk": "Desk",
+    "others": "Others"
   }
 }

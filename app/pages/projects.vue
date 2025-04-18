@@ -1,3 +1,15 @@
+<script setup lang="ts">
+const { t, locale } = useI18n();
+
+const description = t('pages.projects.subtitle');
+useSeoMeta({
+  title: `${t('nav.projects')} | Don Freddy`,
+  description,
+});
+
+const projects = await queryCollection(`projects_${locale.value}`).all();
+</script>
+
 <template>
   <main class="min-h-screen">
     <AppHeader class="mb-12" :title="$t('nav.projects')" :description="description" />
@@ -6,17 +18,5 @@
     </div>
   </main>
 </template>
-
-<script setup>
-const { t, locale } = useI18n();
-
-const description = t("pages.projects.subtitle");
-useSeoMeta({
-  title: `${t("nav.projects")} | Don Freddy`,
-  description,
-});
-
-const projects = await queryCollection(`projects_${locale.value}`).all();
-</script>
 
 <style></style>
