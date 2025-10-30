@@ -46,7 +46,13 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/css/main.css'],
-  modules: ['@nuxt/ui', '@nuxt/content', '@nuxtjs/i18n', '@nuxt/image', '@vueuse/nuxt'],
+  modules: [
+    '@nuxt/ui',
+    '@nuxt/content',
+    '@nuxtjs/i18n',
+    '@nuxt/image',
+    '@vueuse/nuxt'
+  ],
   i18n: {
     locales: [
       { code: 'en', name: 'English', file: 'en-US.json' },
@@ -62,7 +68,7 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default',
     vueI18n: './i18n.config.ts',
     bundle: {
-      optimizeTranslationDirective: false,
+      // optimizeTranslationDirective: false,
     },
   },
 });

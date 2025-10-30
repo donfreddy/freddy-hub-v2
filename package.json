@@ -12,25 +12,28 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@nuxt/content": "^3.4.0",
-    "@nuxt/image": "^1.10.0",
-    "@nuxt/ui": "^3.0.2",
+    "@nuxt/content": "^3.8.0",
+    "@nuxt/image": "^1.11.0",
+    "@nuxtjs/device": "^3.2.4",
+    "@nuxtjs/i18n": "^10.1.2",
+    "@nuxt/ui": "^4.1.0",
     "@nuxtjs/fontaine": "^0.5.0",
-    "@vueuse/core": "^13.1.0",
-    "@vueuse/nuxt": "^13.1.0",
+    "@vueuse/core": "^14.0.0",
+    "@vueuse/nuxt": "^14.0.0",
+    "better-sqlite3": "^12.4.1",
     "moment": "^2.30.1",
-    "mongoose": "8.13.2",
-    "nodemailer": "^6.10.1",
-    "nuxt": "3.16.2",
+    "mongoose": "8.19.2",
+    "nodemailer": "^7.0.10",
+    "nuxt": "^4.2.0",
     "vue": "latest",
     "vue-router": "latest",
-    "vue-use-fixed-header": "^2.0.3"
+    "vue-use-fixed-header": "^2.0.3",
+    "zod": "^4.1.12"
   },
   "devDependencies": {
-    "@iconify-json/solar": "^1.2.2",
-    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge@9.5.3-29068367.7a048a9",
-    "typescript": "^5.7.3",
-    "vue-tsc": "^2.2.8"
-  },
-  "packageManager": "pnpm@10.7.0"
+    "@iconify-json/lucide": "^1.2.71",
+    "@iconify-json/simple-icons": "^1.2.56",
+    "typescript": "^5.9.3",
+    "vue-tsc": "^3.1.2"
+  }
 }
