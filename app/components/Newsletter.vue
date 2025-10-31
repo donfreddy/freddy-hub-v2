@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import type { ToastProps } from '#ui/types';
 
 const email = ref('');
 const message = ref('');
@@ -34,7 +35,7 @@ function showToast(msg:string, type = 'error') {
   toast.add({
     title: 'Newsletter',
     description: msg,
-    color: type,
+    color: type as ToastProps['color'],
     icon: 'solar:letter-unread-outline',
   });
 }
@@ -42,7 +43,7 @@ function showToast(msg:string, type = 'error') {
 
 <template>
   <UCard class="dark:bg-zinc-500/10 dark:ring-white/10">
-    <div class="mb-3 inline-flex items-center gap-3">
+    <div class="mb-3 inline-flex items-center gap-2">
       <div
         class="flex-none rounded-full p-1.5 text-primary-500 bg-primary-500/10"
       >

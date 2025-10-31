@@ -7,28 +7,6 @@ const { slug } = route.params;
 
 const { locale } = useI18n();
 
-const views = ref(0);
-// onMounted(async () => {
-//   // Check localStorage to avoid duplicate calls
-//   const viewedPages = JSON.parse(localStorage.getItem("viewed_pages") || "[]");
-//   if (viewedPages.includes(slug)) return;
-
-//   try {
-//     const { views: currentViews } = await $fetch(`/api/views?slug=${slug}`, {
-//       method: "POST",
-//     });
-//     console.log("currentViews", currentViews);
-
-//     views.value = currentViews;
-
-//     // Mark the page as viewed
-//     viewedPages.push(slug);
-//     localStorage.setItem("viewed_pages", JSON.stringify(viewedPages));
-//   } catch (error) {
-//     console.error("Failed to save view count:", error);
-//   }
-// });
-
 const { data: article } = await useAsyncData(route.path, () =>
   queryCollection(`articles_${locale.value}`)
     .where('slug', '=', slug)
@@ -67,7 +45,7 @@ const passedDate = (value) => {
   <main>
     <div class="mx-auto">
       <div class="flex flex-col w-auto mb-20">
-        <h1 class="text-xl font-bold text-fgColor sm:text-2xl md:text-4xl">
+        <h1 class="text-3xl sm:text-4xl text-pretty font-bold text-highlighted">
           {{ article.title }}
         </h1>
 
@@ -92,10 +70,6 @@ const passedDate = (value) => {
           <span>{{
               $t('pages.article_detail.reading', { time: article.readingTime })
             }}</span>
-          <div
-            class="self-stretch w-0.5 h-5 bg-gradient-to-tr from-transparent via-zinc-800 dark:via-white to-transparent opacity-20"
-          ></div>
-          <span>{{ $t('pages.article_detail.viewed', { count: views }) }}</span>
         </div>
 
         <!--  -->

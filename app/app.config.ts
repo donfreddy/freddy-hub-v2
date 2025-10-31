@@ -19,7 +19,7 @@ export default defineAppConfig({
     {
       name: 'LinkedIn',
       icon: 'mdi:linkedin',
-      url: 'https://linkedin.com/in/don-freddy-237ba4193',
+      url: 'https://linkedin.com/in/donfreddy',
     },
     {
       name: 'Twitter',

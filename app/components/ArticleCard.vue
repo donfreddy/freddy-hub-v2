@@ -17,7 +17,7 @@
       >
         {{ article.title }}
       </h2>
-      <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+      <p class="relative z-10 mt-2 text-sm text-muted">
         {{ article.description }}
       </p>
       <div class="inline-flex flex-wrap my-2">

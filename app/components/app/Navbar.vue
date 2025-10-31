@@ -20,7 +20,7 @@ const items = [
   {
     name: t('nav.whats_in_my_bag'),
     path: '/whats-in-my-bag',
-    icon: 'i-lucide-backpack',
+    icon: 'solar:backpack-outline',
   },
   {
     name: t('nav.bookmarks'),
@@ -43,7 +43,7 @@ const items = [
               class="relative px-3 py-4 flex items-center justify-center transition hover:text-primary-500 dark:hover:text-primary-400"
               active-class="text-primary-600 dark:text-primary-400"
             >
-              <UIcon aria-hidden="true" :name="item.icon" class="w-5 h-5 z-10" />
+              <Icon aria-hidden="true" :name="item.icon" class="w-5 h-5 z-10" />
               <span
                 v-if="$localeRoute(item.path).path === $route.path"
                 class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-primary-500/0 via-primary-500/70 to-primary-500/0 dark:from-primary-400/0 dark:via-primary-400/40 dark:to-primary-400/0"

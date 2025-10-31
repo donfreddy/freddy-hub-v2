@@ -15,7 +15,7 @@ defineProps({
       >
         {{ item.name }}
       </p>
-      <p class="text-sm text-gray-500">{{ item.description }}</p>
+      <p class="text-sm text-muted">{{ item.description }}</p>
     </NuxtLink>
   </li>
 </template>

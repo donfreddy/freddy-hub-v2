@@ -1,6 +1,6 @@
-import { promises as fs } from "fs";
+import { promises as fs } from "node:fs";
 import nodemailer from "nodemailer";
-import { join } from "path";
+import { join } from "node:path";
 
 const transporter = nodemailer.createTransport({
   host: "smtp.example.com",
